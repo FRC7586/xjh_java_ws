@@ -7,7 +7,26 @@ public class Hero {
     int moveSpeed;
     int age;
     int attackSpeed;
-
+    
+    void keng(){
+    	System.out.println("kengduiyou!");
+    }
+    void ledendary(){
+    	System.out.println("woshishen!");
+    }
+    float getArmor(){
+    	return armor;
+    }
+    float getHp(){
+    	return hp;
+    }
+    void addSpeed(int speed){
+    	speed = moveSpeed + speed;
+    }
+    void recovery(float blood){
+    	hp = hp + blood;
+    }
+    
 public static void main(String[] args) {
 	Hero garen = new Hero();
 	garen.name = "gailun";
@@ -15,8 +34,8 @@ public static void main(String[] args) {
 	garen.hp = 616.28f;
 	garen.armor = 27.536f;
 	garen.moveSpeed = 350;
-	
     garen.attackSpeed = 200;
+    garen.addSpeed(100);
     
 	Hero teemo = new Hero();
 	teemo.name = "timo";
@@ -28,4 +47,4 @@ public static void main(String[] args) {
 }
 }
 //!@#$%^&*() 
-//age and atteckSpeed is write by myself
+//half of them is written by myself
